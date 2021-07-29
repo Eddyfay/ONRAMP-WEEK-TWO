@@ -2,23 +2,27 @@ body {
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
-    font-weight: 100px;
-    font-family: spartan;
+    font-weight: px;
 }
 
 .wrapper {
     display: grid;
-    grid-template-rows: 2fr 1fr 0.8fr;
+    grid-template-rows: 2fr 1fr 0.6fr;
     grid-auto-columns: minmax(100px, auto);
     grid-gap: em;
+    font-size: 20px;
 }
 
 .section1 {
     background: url(hero-bg-desktop.jpg);
-    width: 100%;
     background-size: cover;
     color: whitesmoke;
 }
+
+
+/*.part1:hover {
+    color: orangered;
+}*/
 
 .part1 {
     display: grid;
@@ -38,8 +42,22 @@ body {
 /*for h1 at the top*/
 
 .part1>div {
-    border: solid 1px;
-    */ padding: 1em;
+    /*border: solid 1px;*/
+    padding: 1em;
+    font-size: 32px;
+}
+
+.reserve {
+    font-size: 100px;
+}
+
+.text1 {
+    font-size: 32px;
+}
+
+.text2>div {
+    border: solid;
+    font-weight: 500;
 }
 
 .section2 {
@@ -57,7 +75,7 @@ body {
 }
 
 .part2>div {
-    border: whitesmoke solid;
+    /*border: whitesmoke solid;*/
     padding: 0.2em;
     width: 5%;
 }
@@ -68,34 +86,40 @@ body {
 .container {
     border-bottom: none;
     padding: 6em;
-    text-align: left;
+    text-align: left height
 }
 
 
 /*below is entire form*/
 
 .form-container {
-    background: rgb(238, 231, 231);
-    width: 300px;
-    height: 400px;
-    margin-bottom: -23em;
-    margin-top: -70px;
-    margin-left: 15em;
+    background: whitesmoke;
+    width: 600px;
+    height: 700px;
+    margin-bottom: -15em;
+    margin-top: -95px;
+    margin-left: 16em;
     padding: -5em;
     color: black;
+    position: absolute;
+    position: relative;
+    z-index: 2;
 }
 
 .form-container>div {
-    width: 300px;
-    height: 25px;
-    margin: 0.5em;
-    padding-top: 1em;
-    text-align: center;
+    width: 550px;
+    height: 55px;
+    margin: 1.5em;
+    padding-left: 1em;
+    padding-top: 0.7em;
+    font-size: 1.6rem;
 }
 
 #input1 #input-group {
-    width: 200px;
-    margin: 5px;
+    width: 400px;
+    margin: 4px;
+    padding: 0.5em;
+    font-size: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -105,8 +129,10 @@ body {
 }
 
 #input2 #input-group {
-    width: 200px;
+    width: 400px;
     margin: 5px;
+    padding: 0.5em;
+    font-size: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -116,8 +142,10 @@ body {
 }
 
 #input3 #input-group {
-    width: 120px;
+    width: 300px;
     margin: 5px;
+    padding: 0.5em;
+    font-size: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -127,8 +155,10 @@ body {
 }
 
 #input4 #input-group {
-    width: 120px;
+    width: 300px;
     margin: 5px;
+    padding: 0.5em;
+    font-size: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -138,8 +168,10 @@ body {
 }
 
 #input5 #input-group {
-    width: 200px;
+    width: 450px;
     margin: 5px;
+    padding: 0.5em;
+    font-size: 20px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -152,18 +184,34 @@ body {
 .btn .btn-warning {
     background-color: black;
     color: cornsilk;
-    width: 200px;
-    margin: 5px;
+    width: 450px;
+    margin-top: 15px;
+    padding: 1.5em;
+    font-size: 1.3rem;
 }
 
+
+/*.btn .btn-warning:hover {
+    
 
 /* The form end*/
 
 .section3 {
     background: mistyrose;
     width: 80%;
-    height: 400px;
+    height: 500px;
     border-end-end-radius: 10rem;
+    position: relative;
+    /*z-index: 1;*/
+}
+
+
+/*.section3:hover {
+    background: rgb(42, 85, 99);
+}*/
+
+.inn {
+    width: 350px;
 }
 
 
@@ -171,7 +219,9 @@ body {
 
 .sub-section3 {
     padding: 10em;
-    margin-left: 35em;
+    margin-left: 45em;
+    width: 40px;
+    height: 25px;
 }
 
 .sub-section3>div {
@@ -195,5 +245,36 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: minmax(100px, auto);
     padding: 3em;
-    align-items: start;
+    justify-items: center;
+    align-items: center;
 }
+
+.sub-sub-section4:hover {
+    color: lawngreen;
+}
+
+.btn .btn-warning:hover {
+    background: blue;
+}
+
+.part1:hover {
+    color: orangered;
+}
+
+
+/*.sub-sub-section4:hover {
+    color: lawngreen;
+}*/
+
+.head3 {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*MEDIA QUERIES FOR DESKOP*/
+
+
+/*@media screen and (max-width: 1440px) and (min-width: 768px) {
+    body {
+        background: hotpink;*/
